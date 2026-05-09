@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Cart · Hii Style</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="topbar">📞 +254 010 393 0040 🎁 <a href="https://wa.me/2540103930040" target="_blank">Order via WhatsApp</a></div>
+<header>
+  <div class="logo"><a href="index.html"><img src="https://www.hiii-style.com/assets/images/hiistyle%20logo.png" alt="Hii Style"></a></div>
+  <nav><a href="index.html">Continue Shopping</a></nav>
+  <div class="right"><a href="cart.html">🛒 <span id="cart-count">0</span></a></div>
+</header>
+<main>
+  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
+  <div id="cart-total"></div>
+  <h2>Checkout</h2>
+  <form id="checkout-form" onsubmit="return checkout(event)">
+    <input required id="c-name" placeholder="Full Name">
+    <input required id="c-phone" placeholder="Your Phone">
+    <input required id="c-addr" placeholder="Delivery Address">
+    <textarea id="c-notes" placeholder="Order notes (optional)"></textarea>
+    <button class="btn buy" type="submit">Confirm Order via WhatsApp</button>
+  </form>
+</main>
+<script src="app.js"></script>
+<script>renderCart();</script>
+</body></html>
